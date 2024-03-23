@@ -12,7 +12,7 @@ RUN wget -O libssl.deb http://security.ubuntu.com/ubuntu/pool/universe/o/openssl
 RUN dpkg -i libssl.deb
 RUN wget -O libportaudio0.deb http://mirrors.kernel.org/ubuntu/pool/universe/p/portaudio/libportaudio0_18.1-7.1_i386.deb
 RUN dpkg -i libportaudio0.deb
-RUN wget -O gp6.deb https://www.guitar-pro.com/download.php?idfile=gp6_linux
+RUN wget -O gp6.deb https://downloads.guitar-pro.com/gp6/gp6-full-linux-r11686.deb
 RUN dpkg -i gp6.deb || true
 # Fix broken things
 RUN apt-get install -y -f
